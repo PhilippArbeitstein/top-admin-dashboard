@@ -1,4 +1,24 @@
+@font-face {
+    font-family: Poppins;
+    src: url(assets/Poppins-Regular.ttf);
+}
+
+:root {
+    --main-color: #16423C;
+    --second-color: #6A9C89;
+    --thrid-color: #C4DAD2;
+    --fourth-color: #E9EFEC;
+}
+
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Poppins', Courier, monospace;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+

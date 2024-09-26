@@ -57,7 +57,7 @@ img {
     grid-template-rows: 1fr 1fr;
 }
 
-.main {
+.main, .greetings {
     display: grid;
     grid-template-columns: 1fr 2fr 64px 64px 256px ;
     grid-template-rows: 1fr;
@@ -67,10 +67,14 @@ img {
     align-content: center;
 }
 
-.search-icon, .bell-icon, .profile-picture{
+.greetings {
+    grid-template-columns: 1fr 5fr 0.25fr 0.25fr 0.25fr ;
+}
+
+
+.search-icon, .bell-icon, .profile-picture, .profile-picture-big{
     display: flex;
-    justify-content: center;
-    align-items: center; 
+    justify-content: center; 
 }
 
 .search-icon {
@@ -85,7 +89,7 @@ input {
     min-height: 24px;
     height: 36px;
     width: 100%;
-    min-width: 150px;
+    min-width: 200px;
     max-width: 700px;
 }
 
@@ -95,3 +99,27 @@ input {
     border-radius: 50%;
 }
 
+.welcome-msg {
+    align-self: center;
+    justify-self: flex-start;
+    min-width: 200px;
+}
+
+.profile-img-big {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; 
+}
+
+.profile-picture-big {
+    justify-content: end;
+}
+
+button {
+    border: none;
+    background-color: var(--main-color);
+    color: var(--sidebar);
+    min-width: 90px;
+    border-radius: 20px;
+    min-height: 36px;
+}
